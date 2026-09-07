@@ -1,0 +1,400 @@
+{
+  "collect_dir": "C:\\Users\\zyx19\\Desktop\\zhengliu\\蒸馏\\TCFormer\\analysis\\single_eeg_feature_viz_collected\\TCFormer_bcic2a_seed-0_aug-True_GPU0_20260503_1331",
+  "result_dir": "C:\\Users\\zyx19\\Desktop\\zhengliu\\蒸馏\\TCFormer\\results\\TCFormer_bcic2a_seed-0_aug-True_GPU0_20260503_1331",
+  "summary": {
+    "avg_primary_acc": "87.04 +/- 9.19",
+    "shallow_exit_acc": "83.02 +/- 8.34",
+    "mid_exit_acc": "86.38 +/- 9.06",
+    "deep_exit_acc": "86.57 +/- 8.88",
+    "final_exit_acc": "86.00 +/- 9.64",
+    "avg_shallow_weight": "0.0928",
+    "avg_mid_weight": "0.3099",
+    "avg_deep_weight": "0.3568",
+    "avg_final_weight": "0.2406",
+    "avg_kappa": "0.827 +/- 0.123",
+    "avg_loss": "0.609 +/- 0.281",
+    "total_train_time": "330.89 min",
+    "avg_response_time": "16.34 ms"
+  },
+  "stage_layout": "multi_exit",
+  "subjects": [
+    {
+      "subject_id": 1,
+      "sample_index": 8,
+      "true_name": "hand(L)",
+      "pred_name": "hand(L)",
+      "confidence": 0.6957945823669434,
+      "sample_weights": {
+        "shallow": 0.09040120989084244,
+        "mid": 0.31461986899375916,
+        "deep": 0.3596882224082947,
+        "final": 0.2352907359600067
+      },
+      "avg_exit_weights": {
+        "shallow": 0.0904,
+        "mid": 0.3146,
+        "deep": 0.3597,
+        "final": 0.2353
+      },
+      "test_acc": 0.9306,
+      "test_kappa": 0.9074,
+      "test_loss": 0.4294,
+      "train_time": "37.03m",
+      "test_time": "2.88s",
+      "top_saliency": [
+        "C2",
+        "C4",
+        "CP4",
+        "CPz",
+        "FC4"
+      ],
+      "top_gradxinput": [
+        "C2",
+        "C4",
+        "CP4",
+        "CPz",
+        "FC4"
+      ],
+      "subject_dir_name": "TCFormer_bcic2a_seed-0_aug-True_GPU0_20260503_1331_subject1_sample8",
+      "curve_acc": "C:\\Users\\zyx19\\Desktop\\zhengliu\\蒸馏\\TCFormer\\results\\TCFormer_bcic2a_seed-0_aug-True_GPU0_20260503_1331\\curves\\subject_1_acc.png",
+      "curve_loss": "C:\\Users\\zyx19\\Desktop\\zhengliu\\蒸馏\\TCFormer\\results\\TCFormer_bcic2a_seed-0_aug-True_GPU0_20260503_1331\\curves\\subject_1_loss.png",
+      "confmat": "C:\\Users\\zyx19\\Desktop\\zhengliu\\蒸馏\\TCFormer\\results\\TCFormer_bcic2a_seed-0_aug-True_GPU0_20260503_1331\\confmats\\confmat_subject_1.png"
+    },
+    {
+      "subject_id": 2,
+      "sample_index": 1,
+      "true_name": "hand(L)",
+      "pred_name": "hand(L)",
+      "confidence": 0.6464953422546387,
+      "sample_weights": {
+        "shallow": 0.08705133944749832,
+        "mid": 0.298132061958313,
+        "deep": 0.34667012095451355,
+        "final": 0.26814648509025574
+      },
+      "avg_exit_weights": {
+        "shallow": 0.0871,
+        "mid": 0.2981,
+        "deep": 0.3467,
+        "final": 0.2681
+      },
+      "test_acc": 0.7014,
+      "test_kappa": 0.6019,
+      "test_loss": 1.1094,
+      "train_time": "36.19m",
+      "test_time": "2.38s",
+      "top_saliency": [
+        "C3",
+        "CPz",
+        "C4",
+        "Cz",
+        "FC3"
+      ],
+      "top_gradxinput": [
+        "C3",
+        "C4",
+        "CPz",
+        "Cz",
+        "FC3"
+      ],
+      "subject_dir_name": "TCFormer_bcic2a_seed-0_aug-True_GPU0_20260503_1331_subject2_sample1",
+      "curve_acc": "C:\\Users\\zyx19\\Desktop\\zhengliu\\蒸馏\\TCFormer\\results\\TCFormer_bcic2a_seed-0_aug-True_GPU0_20260503_1331\\curves\\subject_2_acc.png",
+      "curve_loss": "C:\\Users\\zyx19\\Desktop\\zhengliu\\蒸馏\\TCFormer\\results\\TCFormer_bcic2a_seed-0_aug-True_GPU0_20260503_1331\\curves\\subject_2_loss.png",
+      "confmat": "C:\\Users\\zyx19\\Desktop\\zhengliu\\蒸馏\\TCFormer\\results\\TCFormer_bcic2a_seed-0_aug-True_GPU0_20260503_1331\\confmats\\confmat_subject_2.png"
+    },
+    {
+      "subject_id": 3,
+      "sample_index": 0,
+      "true_name": "feet",
+      "pred_name": "feet",
+      "confidence": 0.9675026535987854,
+      "sample_weights": {
+        "shallow": 0.0931185930967331,
+        "mid": 0.3151768445968628,
+        "deep": 0.363403856754303,
+        "final": 0.2283007651567459
+      },
+      "avg_exit_weights": {
+        "shallow": 0.0931,
+        "mid": 0.3152,
+        "deep": 0.3634,
+        "final": 0.2283
+      },
+      "test_acc": 0.9757,
+      "test_kappa": 0.9676,
+      "test_loss": 0.2744,
+      "train_time": "36.28m",
+      "test_time": "2.31s",
+      "top_saliency": [
+        "CPz",
+        "C4",
+        "CP3",
+        "Cz",
+        "FCz"
+      ],
+      "top_gradxinput": [
+        "CPz",
+        "Cz",
+        "C4",
+        "CP3",
+        "FCz"
+      ],
+      "subject_dir_name": "TCFormer_bcic2a_seed-0_aug-True_GPU0_20260503_1331_subject3_sample0",
+      "curve_acc": "C:\\Users\\zyx19\\Desktop\\zhengliu\\蒸馏\\TCFormer\\results\\TCFormer_bcic2a_seed-0_aug-True_GPU0_20260503_1331\\curves\\subject_3_acc.png",
+      "curve_loss": "C:\\Users\\zyx19\\Desktop\\zhengliu\\蒸馏\\TCFormer\\results\\TCFormer_bcic2a_seed-0_aug-True_GPU0_20260503_1331\\curves\\subject_3_loss.png",
+      "confmat": "C:\\Users\\zyx19\\Desktop\\zhengliu\\蒸馏\\TCFormer\\results\\TCFormer_bcic2a_seed-0_aug-True_GPU0_20260503_1331\\confmats\\confmat_subject_3.png"
+    },
+    {
+      "subject_id": 4,
+      "sample_index": 12,
+      "true_name": "feet",
+      "pred_name": "feet",
+      "confidence": 0.9686605334281921,
+      "sample_weights": {
+        "shallow": 0.08548220992088318,
+        "mid": 0.3114488124847412,
+        "deep": 0.3602624833583832,
+        "final": 0.24280647933483124
+      },
+      "avg_exit_weights": {
+        "shallow": 0.0855,
+        "mid": 0.3114,
+        "deep": 0.3603,
+        "final": 0.2428
+      },
+      "test_acc": 0.8924,
+      "test_kappa": 0.8565,
+      "test_loss": 0.5252,
+      "train_time": "36.19m",
+      "test_time": "2.26s",
+      "top_saliency": [
+        "POz",
+        "CP3",
+        "C6",
+        "Cz",
+        "CP2"
+      ],
+      "top_gradxinput": [
+        "POz",
+        "CP3",
+        "C6",
+        "CP2",
+        "Cz"
+      ],
+      "subject_dir_name": "TCFormer_bcic2a_seed-0_aug-True_GPU0_20260503_1331_subject4_sample12",
+      "curve_acc": "C:\\Users\\zyx19\\Desktop\\zhengliu\\蒸馏\\TCFormer\\results\\TCFormer_bcic2a_seed-0_aug-True_GPU0_20260503_1331\\curves\\subject_4_acc.png",
+      "curve_loss": "C:\\Users\\zyx19\\Desktop\\zhengliu\\蒸馏\\TCFormer\\results\\TCFormer_bcic2a_seed-0_aug-True_GPU0_20260503_1331\\curves\\subject_4_loss.png",
+      "confmat": "C:\\Users\\zyx19\\Desktop\\zhengliu\\蒸馏\\TCFormer\\results\\TCFormer_bcic2a_seed-0_aug-True_GPU0_20260503_1331\\confmats\\confmat_subject_4.png"
+    },
+    {
+      "subject_id": 5,
+      "sample_index": 2,
+      "true_name": "hand(L)",
+      "pred_name": "hand(L)",
+      "confidence": 0.9565468430519104,
+      "sample_weights": {
+        "shallow": 0.0920959860086441,
+        "mid": 0.3101343810558319,
+        "deep": 0.3589542806148529,
+        "final": 0.23881542682647705
+      },
+      "avg_exit_weights": {
+        "shallow": 0.0921,
+        "mid": 0.3101,
+        "deep": 0.359,
+        "final": 0.2388
+      },
+      "test_acc": 0.8125,
+      "test_kappa": 0.75,
+      "test_loss": 0.791,
+      "train_time": "36.44m",
+      "test_time": "2.35s",
+      "top_saliency": [
+        "C3",
+        "C5",
+        "CPz",
+        "CP3",
+        "C1"
+      ],
+      "top_gradxinput": [
+        "C3",
+        "C5",
+        "CPz",
+        "CP3",
+        "C1"
+      ],
+      "subject_dir_name": "TCFormer_bcic2a_seed-0_aug-True_GPU0_20260503_1331_subject5_sample2",
+      "curve_acc": "C:\\Users\\zyx19\\Desktop\\zhengliu\\蒸馏\\TCFormer\\results\\TCFormer_bcic2a_seed-0_aug-True_GPU0_20260503_1331\\curves\\subject_5_acc.png",
+      "curve_loss": "C:\\Users\\zyx19\\Desktop\\zhengliu\\蒸馏\\TCFormer\\results\\TCFormer_bcic2a_seed-0_aug-True_GPU0_20260503_1331\\curves\\subject_5_loss.png",
+      "confmat": "C:\\Users\\zyx19\\Desktop\\zhengliu\\蒸馏\\TCFormer\\results\\TCFormer_bcic2a_seed-0_aug-True_GPU0_20260503_1331\\confmats\\confmat_subject_5.png"
+    },
+    {
+      "subject_id": 6,
+      "sample_index": 1,
+      "true_name": "hand(L)",
+      "pred_name": "hand(L)",
+      "confidence": 0.8388530611991882,
+      "sample_weights": {
+        "shallow": 0.09109444916248322,
+        "mid": 0.31699055433273315,
+        "deep": 0.3637804090976715,
+        "final": 0.22813454270362854
+      },
+      "avg_exit_weights": {
+        "shallow": 0.0911,
+        "mid": 0.317,
+        "deep": 0.3638,
+        "final": 0.2281
+      },
+      "test_acc": 0.7361,
+      "test_kappa": 0.6481,
+      "test_loss": 1.0392,
+      "train_time": "36.56m",
+      "test_time": "2.35s",
+      "top_saliency": [
+        "Cz",
+        "CP2",
+        "CP4",
+        "P2",
+        "P1"
+      ],
+      "top_gradxinput": [
+        "Cz",
+        "CP2",
+        "CP4",
+        "FCz",
+        "FC3"
+      ],
+      "subject_dir_name": "TCFormer_bcic2a_seed-0_aug-True_GPU0_20260503_1331_subject6_sample1",
+      "curve_acc": "C:\\Users\\zyx19\\Desktop\\zhengliu\\蒸馏\\TCFormer\\results\\TCFormer_bcic2a_seed-0_aug-True_GPU0_20260503_1331\\curves\\subject_6_acc.png",
+      "curve_loss": "C:\\Users\\zyx19\\Desktop\\zhengliu\\蒸馏\\TCFormer\\results\\TCFormer_bcic2a_seed-0_aug-True_GPU0_20260503_1331\\curves\\subject_6_loss.png",
+      "confmat": "C:\\Users\\zyx19\\Desktop\\zhengliu\\蒸馏\\TCFormer\\results\\TCFormer_bcic2a_seed-0_aug-True_GPU0_20260503_1331\\confmats\\confmat_subject_6.png"
+    },
+    {
+      "subject_id": 7,
+      "sample_index": 9,
+      "true_name": "tongue",
+      "pred_name": "tongue",
+      "confidence": 0.967832088470459,
+      "sample_weights": {
+        "shallow": 0.10695283114910126,
+        "mid": 0.3202406167984009,
+        "deep": 0.367412269115448,
+        "final": 0.2053942233324051
+      },
+      "avg_exit_weights": {
+        "shallow": 0.107,
+        "mid": 0.3202,
+        "deep": 0.3674,
+        "final": 0.2054
+      },
+      "test_acc": 0.9514,
+      "test_kappa": 0.9352,
+      "test_loss": 0.3889,
+      "train_time": "37.22m",
+      "test_time": "2.32s",
+      "top_saliency": [
+        "C3",
+        "Cz",
+        "CPz",
+        "CP3",
+        "C1"
+      ],
+      "top_gradxinput": [
+        "Cz",
+        "C3",
+        "CPz",
+        "CP3",
+        "C1"
+      ],
+      "subject_dir_name": "TCFormer_bcic2a_seed-0_aug-True_GPU0_20260503_1331_subject7_sample9",
+      "curve_acc": "C:\\Users\\zyx19\\Desktop\\zhengliu\\蒸馏\\TCFormer\\results\\TCFormer_bcic2a_seed-0_aug-True_GPU0_20260503_1331\\curves\\subject_7_acc.png",
+      "curve_loss": "C:\\Users\\zyx19\\Desktop\\zhengliu\\蒸馏\\TCFormer\\results\\TCFormer_bcic2a_seed-0_aug-True_GPU0_20260503_1331\\curves\\subject_7_loss.png",
+      "confmat": "C:\\Users\\zyx19\\Desktop\\zhengliu\\蒸馏\\TCFormer\\results\\TCFormer_bcic2a_seed-0_aug-True_GPU0_20260503_1331\\confmats\\confmat_subject_7.png"
+    },
+    {
+      "subject_id": 8,
+      "sample_index": 0,
+      "true_name": "feet",
+      "pred_name": "feet",
+      "confidence": 0.9779330492019653,
+      "sample_weights": {
+        "shallow": 0.09612054377794266,
+        "mid": 0.30090460181236267,
+        "deep": 0.3482801914215088,
+        "final": 0.25469473004341125
+      },
+      "avg_exit_weights": {
+        "shallow": 0.0961,
+        "mid": 0.3009,
+        "deep": 0.3483,
+        "final": 0.2547
+      },
+      "test_acc": 0.9201,
+      "test_kappa": 0.8935,
+      "test_loss": 0.4557,
+      "train_time": "37.66m",
+      "test_time": "2.45s",
+      "top_saliency": [
+        "POz",
+        "CPz",
+        "CP3",
+        "P2",
+        "CP2"
+      ],
+      "top_gradxinput": [
+        "POz",
+        "CPz",
+        "CP3",
+        "P2",
+        "CP2"
+      ],
+      "subject_dir_name": "TCFormer_bcic2a_seed-0_aug-True_GPU0_20260503_1331_subject8_sample0",
+      "curve_acc": "C:\\Users\\zyx19\\Desktop\\zhengliu\\蒸馏\\TCFormer\\results\\TCFormer_bcic2a_seed-0_aug-True_GPU0_20260503_1331\\curves\\subject_8_acc.png",
+      "curve_loss": "C:\\Users\\zyx19\\Desktop\\zhengliu\\蒸馏\\TCFormer\\results\\TCFormer_bcic2a_seed-0_aug-True_GPU0_20260503_1331\\curves\\subject_8_loss.png",
+      "confmat": "C:\\Users\\zyx19\\Desktop\\zhengliu\\蒸馏\\TCFormer\\results\\TCFormer_bcic2a_seed-0_aug-True_GPU0_20260503_1331\\confmats\\confmat_subject_8.png"
+    },
+    {
+      "subject_id": 9,
+      "sample_index": 0,
+      "true_name": "feet",
+      "pred_name": "feet",
+      "confidence": 0.9628956317901611,
+      "sample_weights": {
+        "shallow": 0.09262900799512863,
+        "mid": 0.30126041173934937,
+        "deep": 0.34243935346603394,
+        "final": 0.2636711895465851
+      },
+      "avg_exit_weights": {
+        "shallow": 0.0926,
+        "mid": 0.3013,
+        "deep": 0.3424,
+        "final": 0.2637
+      },
+      "test_acc": 0.9132,
+      "test_kappa": 0.8843,
+      "test_loss": 0.4699,
+      "train_time": "37.33m",
+      "test_time": "2.58s",
+      "top_saliency": [
+        "CPz",
+        "Pz",
+        "FC3",
+        "CP4",
+        "C5"
+      ],
+      "top_gradxinput": [
+        "CPz",
+        "FC3",
+        "Pz",
+        "C5",
+        "C1"
+      ],
+      "subject_dir_name": "TCFormer_bcic2a_seed-0_aug-True_GPU0_20260503_1331_subject9_sample0",
+      "curve_acc": "C:\\Users\\zyx19\\Desktop\\zhengliu\\蒸馏\\TCFormer\\results\\TCFormer_bcic2a_seed-0_aug-True_GPU0_20260503_1331\\curves\\subject_9_acc.png",
+      "curve_loss": "C:\\Users\\zyx19\\Desktop\\zhengliu\\蒸馏\\TCFormer\\results\\TCFormer_bcic2a_seed-0_aug-True_GPU0_20260503_1331\\curves\\subject_9_loss.png",
+      "confmat": "C:\\Users\\zyx19\\Desktop\\zhengliu\\蒸馏\\TCFormer\\results\\TCFormer_bcic2a_seed-0_aug-True_GPU0_20260503_1331\\confmats\\confmat_subject_9.png"
+    }
+  ]
+}

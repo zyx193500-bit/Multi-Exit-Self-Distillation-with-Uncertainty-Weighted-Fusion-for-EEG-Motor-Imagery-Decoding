@@ -1,0 +1,19 @@
+﻿dataset,subject,reference,fusion_minus_final_pp,rescued_final_errors,introduced_errors,prediction_disagreement_pct
+bcic2a,1,Final exit in the same multi-exit model; NOT independent single-exit baseline,1.736111111111116,6,1,2.7777777777777777
+bcic2a,2,Final exit in the same multi-exit model; NOT independent single-exit baseline,1.388888888888884,7,3,5.208333333333334
+bcic2a,3,Final exit in the same multi-exit model; NOT independent single-exit baseline,0.347222222222221,2,1,1.0416666666666665
+bcic2a,4,Final exit in the same multi-exit model; NOT independent single-exit baseline,0.3472222222222321,1,0,1.0416666666666665
+bcic2a,5,Final exit in the same multi-exit model; NOT independent single-exit baseline,0.0,4,4,3.125
+bcic2a,6,Final exit in the same multi-exit model; NOT independent single-exit baseline,3.125,9,0,4.513888888888888
+bcic2a,7,Final exit in the same multi-exit model; NOT independent single-exit baseline,1.388888888888884,5,1,2.083333333333333
+bcic2a,8,Final exit in the same multi-exit model; NOT independent single-exit baseline,0.694444444444442,3,1,1.3888888888888888
+bcic2a,9,Final exit in the same multi-exit model; NOT independent single-exit baseline,0.347222222222221,3,2,1.7361111111111112
+bcic2b,1,Final exit in the same multi-exit model; NOT independent single-exit baseline,0.6249999999999978,4,2,1.875
+bcic2b,2,Final exit in the same multi-exit model; NOT independent single-exit baseline,-1.0714285714285676,4,7,3.9285714285714284
+bcic2b,3,Final exit in the same multi-exit model; NOT independent single-exit baseline,-0.31250000000000444,8,9,5.3125
+bcic2b,4,Final exit in the same multi-exit model; NOT independent single-exit baseline,0.6249999999999978,2,0,0.625
+bcic2b,5,Final exit in the same multi-exit model; NOT independent single-exit baseline,0.0,0,0,0.0
+bcic2b,6,Final exit in the same multi-exit model; NOT independent single-exit baseline,0.6249999999999978,4,2,1.875
+bcic2b,7,Final exit in the same multi-exit model; NOT independent single-exit baseline,0.6249999999999978,3,1,1.25
+bcic2b,8,Final exit in the same multi-exit model; NOT independent single-exit baseline,0.31250000000000444,1,0,0.3125
+bcic2b,9,Final exit in the same multi-exit model; NOT independent single-exit baseline,0.6249999999999978,5,3,2.5

@@ -1,0 +1,13 @@
+{
+  "finished": true,
+  "complete": true,
+  "seed": 0,
+  "completed_models": 18,
+  "requested_models": 18,
+  "failures": [],
+  "total_test_trials": 5432,
+  "checkpoint_hashes": "all unchanged",
+  "accuracy_and_exit_weights": "all match archived logs within rounding",
+  "precision": "FP32 on CUDA; archived training config was 16-mixed",
+  "metric_checks": "passed"
+}

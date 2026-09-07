@@ -1,0 +1,48 @@
+AUTHOR PREVIEW QA
+
+Scope
+Eight figure pages and their CSV source tables were generated independently of
+the manuscript and response letter. No manuscript file was edited.
+
+Computation
+All 18 subject-model prediction exports were included, totaling 5,432 test
+trials. Recomputed calibration metrics match the previous verified outputs.
+Normalized weights were reconstructed from effective log-scales, fixed priors
+and the final coefficient and match the saved inference weights.
+All 56 correlation tests use nine subject-level observations each.
+Exact permutation tests enumerate 362,880 pairings per association.
+The smallest raw P value is approximately 0.05889; none passes 0.05 even
+before correction. Holm adjustment is retained across the complete family.
+The final exit is a within-model reference, not an independent baseline.
+
+Rendering
+01: Calibration table. All ten rows retained. Output shading identifies fusion
+    only, with no significance encoding. No text collision found.
+02: Reliability overview. Both datasets, both outputs and their confidence
+    distributions retained. Empty bins are not joined. No collision found.
+03a/03b: All-exit reliability. Pooled ECE labels moved above the plotting area
+    to avoid covering sparse-bin data. All five outputs retained per dataset.
+04: Correlation heatmaps. Seven parameter rows and four metrics retained in
+    both datasets. Learned scales and normalized weights remain separated.
+05: Subject gains. All nine paired differences retained per dataset, including
+    ties and decreases. Labels use decimal half-up rounding.
+06: Log-scale scatter. All subject labels and data points retained. Labels
+    repositioned using measured text bounds without moving data.
+07: Complementarity. All six exit pairs retained. Diagonal comparisons masked
+    by definition, not excluded observations. No undefined correlation removed.
+
+Export
+The PDF text-size audit passed: minimum 6.5 pt, no text runs below 5 pt.
+The figures use editable PDF/SVG text and are 183 mm wide.
+PNG previews are 300 dpi. TIFF was not generated because this is a preview
+package, not a submission-specific raster delivery.
+The source validator's width warning reflects a computed width constant;
+the exported figure dimensions were checked separately.
+PNG/SVG/HTML/caption text contains none of the run-label wording the author
+asked to omit. No repeated-experiment or across-initialization claim was added.
+
+Interpretation
+Reliability diagrams pool trials descriptively; the summary table averages
+subject-level metrics. These two ECE aggregations are not interchangeable.
+Improved NLL/Brier does not establish genuine sample-level uncertainty.
+Correlation direction and non-significance are both retained.

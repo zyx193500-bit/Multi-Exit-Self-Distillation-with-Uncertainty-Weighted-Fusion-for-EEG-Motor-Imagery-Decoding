@@ -1,0 +1,9 @@
+status=finished
+subject_id=9
+epoch=500
+max_epochs=500
+global_step=4500
+train_loss=0.176469
+train_acc=0.970000
+val_loss=0.373014
+val_acc=0.881250

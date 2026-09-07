@@ -1,0 +1,120 @@
+# general
+dataset_name: ""   # options: "bcic2a", "bcic2b", "bcic3", "reh_mi", or "hgd".
+                   # Note: This value will be overridden if specified in train_test.py
+                   # or if passed as a command-line argument (e.g., --dataset bcic2a).
+                   
+subject_ids: "all" # options: "all", an integer (e.g., 1), or a list of integers (e.g., [1, 2, 3]).
+max_epochs: 1000
+max_epochs_2b: 500 # for bcic2b
+max_epochs_loso: 125  
+max_epochs_loso_hgd: 77  
+seed: 0
+author_protocol: true # Random seed for reproducibility. 
+save_best_checkpoint: false
+selection_metric: "val_acc"
+selection_mode: "max"
+precision: "16-mixed"
+accumulate_grad_batches: 2
+early_stopping:
+  enabled: false
+  monitor: "val_acc"
+  mode: "max"
+  patience: 40
+  min_delta: 0.0
+  verbose: true
+
+# preprocessing
+z_scale: True 
+interaug: True 
+preprocessing:
+  bcic2a:
+    sfreq: 250 
+    low_cut: null 
+    high_cut: null 
+    start: 0.0  
+    stop: 0.0 
+    batch_size: 16
+  bcic2b:
+    sfreq: 250
+    low_cut: null
+    high_cut: null
+    start: 0.0
+    stop: -0.5 
+    batch_size: 48
+  bcic3:
+    sfreq: 100
+    low_cut: 0
+    high_cut: 40
+    start: 0.0
+    stop: 0.0
+    batch_size: 28
+    channel_selection: True
+  reh_mi:
+    sfreq: 128
+    low_cut: 4
+    high_cut: 50
+    start: 0.0
+    stop: 0.0
+    batch_size: 48
+  hgd:
+    sfreq: 250
+    low_cut: 4
+    high_cut: null
+    start: 0.0 
+    stop: 0.0
+    batch_size: 48
+    remove_artifacts: True
+
+# model
+model: "TCFormer"
+model_kwargs:
+  F1: 32 
+  temp_kernel_lengths: [20, 32, 64]
+  d_group: 16
+  D: 2
+  pool_length_1: 8  
+  pool_length_2: 7  
+  dropout_conv: 0.4
+  use_group_attn: True 
+
+  # Transformer parameters (Grouped query attention paramerters)
+  q_heads : 4 
+  kv_heads : 2 # number of kv groups
+  trans_depth: 5
+  trans_dropout: 0.4  # 0.4 and path drop = 0.25
+
+  # TCN_head parameters 
+  tcn_depth: 2
+  kernel_length_tcn: 4
+  dropout_tcn: 0.3 
+  
+  lr: 0.0009 
+  beta_1: 0.5 
+  weight_decay: 0.001 
+  optimizer: "adam"
+  scheduler: True
+  warmup_epochs: 20  
+  warmup_epochs_loso: 3
+  byot_proj_dim: 128
+  distill_temperature: 3.0
+  primary_output: "ensemble"
+  ensemble_loss_weight: 1.2
+  teacher_loss_weight: 0.8
+  teacher_ensemble_weight: 3.0
+  ensemble_prior_shallow: 0.45
+  ensemble_prior_mid: 0.90
+  ensemble_prior_deep: 1.15
+  byot_distill_start_epoch: 30
+  byot_distill_ramp_epochs: 20
+  byot_hint_start_epoch: 60
+  byot_hint_ramp_epochs: 20
+  byot_normalize_hints: True
+  byot_ce_weight_shallow: 0.8
+  byot_ce_weight_mid: 0.9
+  byot_ce_weight_deep: 1.0
+  byot_kd_weight_shallow: 0.5
+  byot_kd_weight_mid: 0.6
+  byot_kd_weight_deep: 0.7
+  byot_hint_weight_shallow: 0.15
+  byot_hint_weight_mid: 0.15
+  byot_hint_weight_deep: 0.10

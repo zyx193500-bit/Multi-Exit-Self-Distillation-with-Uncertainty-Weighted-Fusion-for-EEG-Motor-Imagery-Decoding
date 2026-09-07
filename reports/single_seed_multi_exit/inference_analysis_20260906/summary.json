@@ -1,0 +1,131 @@
+{
+  "scope": "Archived seed-0 multi-exit checkpoint inference only; no training or tuning",
+  "aggregation": "Equal-weight mean of per-subject metrics; no between-seed SD",
+  "ece": "15 fixed equal-width bins of maximum softmax probability, [left,right), last inclusive",
+  "nll": "Mean hard-label negative log probability, natural logarithm, no smoothing",
+  "brier": "Mean sum of squared probability errors over all classes",
+  "fusion": "Weighted logits then softmax, using checkpoint global exit weights",
+  "interpretation": "F is within the multi-exit model, not independently trained single-exit",
+  "summary": [
+    {
+      "dataset": "bcic2a",
+      "seed": 0,
+      "exit": "shallow",
+      "n_subjects": 9,
+      "n_trials": 2592,
+      "macro_accuracy_pct": 83.02469135802468,
+      "macro_kappa": 0.7736625514403292,
+      "macro_ece_15": 0.06574437526191998,
+      "macro_nll": 0.49211273219112633,
+      "macro_brier_sum": 0.2538849963018048
+    },
+    {
+      "dataset": "bcic2a",
+      "seed": 0,
+      "exit": "mid",
+      "n_subjects": 9,
+      "n_trials": 2592,
+      "macro_accuracy_pct": 86.38117283950618,
+      "macro_kappa": 0.8184156378600823,
+      "macro_ece_15": 0.08023688716484716,
+      "macro_nll": 0.48925796126837795,
+      "macro_brier_sum": 0.22905638473499346
+    },
+    {
+      "dataset": "bcic2a",
+      "seed": 0,
+      "exit": "deep",
+      "n_subjects": 9,
+      "n_trials": 2592,
+      "macro_accuracy_pct": 86.57407407407408,
+      "macro_kappa": 0.8209876543209877,
+      "macro_ece_15": 0.08210308122655723,
+      "macro_nll": 0.49015401235473266,
+      "macro_brier_sum": 0.22799763767664796
+    },
+    {
+      "dataset": "bcic2a",
+      "seed": 0,
+      "exit": "final",
+      "n_subjects": 9,
+      "n_trials": 2592,
+      "macro_accuracy_pct": 85.99537037037037,
+      "macro_kappa": 0.8132716049382717,
+      "macro_ece_15": 0.08221392900089501,
+      "macro_nll": 0.4876611892934864,
+      "macro_brier_sum": 0.2286476274733329
+    },
+    {
+      "dataset": "bcic2a",
+      "seed": 0,
+      "exit": "ensemble",
+      "n_subjects": 9,
+      "n_trials": 2592,
+      "macro_accuracy_pct": 87.03703703703704,
+      "macro_kappa": 0.8271604938271605,
+      "macro_ece_15": 0.07799870252157656,
+      "macro_nll": 0.4696682805653664,
+      "macro_brier_sum": 0.22318703195801723
+    },
+    {
+      "dataset": "bcic2b",
+      "seed": 0,
+      "exit": "shallow",
+      "n_subjects": 9,
+      "n_trials": 2840,
+      "macro_accuracy_pct": 86.83035714285714,
+      "macro_kappa": 0.7366071428571428,
+      "macro_ece_15": 0.05369536148184681,
+      "macro_nll": 0.3115367114737028,
+      "macro_brier_sum": 0.1917235460508197
+    },
+    {
+      "dataset": "bcic2b",
+      "seed": 0,
+      "exit": "mid",
+      "n_subjects": 9,
+      "n_trials": 2840,
+      "macro_accuracy_pct": 89.37996031746032,
+      "macro_kappa": 0.7875992063492062,
+      "macro_ece_15": 0.05210027687823872,
+      "macro_nll": 0.2819889449338472,
+      "macro_brier_sum": 0.16767454813111154
+    },
+    {
+      "dataset": "bcic2b",
+      "seed": 0,
+      "exit": "deep",
+      "n_subjects": 9,
+      "n_trials": 2840,
+      "macro_accuracy_pct": 89.04761904761905,
+      "macro_kappa": 0.780952380952381,
+      "macro_ece_15": 0.056472628880942094,
+      "macro_nll": 0.2851677752879008,
+      "macro_brier_sum": 0.16975849563507742
+    },
+    {
+      "dataset": "bcic2b",
+      "seed": 0,
+      "exit": "final",
+      "n_subjects": 9,
+      "n_trials": 2840,
+      "macro_accuracy_pct": 89.76190476190476,
+      "macro_kappa": 0.7952380952380952,
+      "macro_ece_15": 0.05215090866906268,
+      "macro_nll": 0.2816458345432301,
+      "macro_brier_sum": 0.16502901051919494
+    },
+    {
+      "dataset": "bcic2b",
+      "seed": 0,
+      "exit": "ensemble",
+      "n_subjects": 9,
+      "n_trials": 2840,
+      "macro_accuracy_pct": 89.99007936507935,
+      "macro_kappa": 0.7998015873015873,
+      "macro_ece_15": 0.053138824080660015,
+      "macro_nll": 0.27340805929873085,
+      "macro_brier_sum": 0.16244458503362458
+    }
+  ]
+}

@@ -1,0 +1,9 @@
+status=training
+subject_id=1
+epoch=128
+max_epochs=1000
+global_step=1152
+train_loss=0.306644
+train_acc=0.960069
+val_loss=0.738952
+val_acc=0.784722

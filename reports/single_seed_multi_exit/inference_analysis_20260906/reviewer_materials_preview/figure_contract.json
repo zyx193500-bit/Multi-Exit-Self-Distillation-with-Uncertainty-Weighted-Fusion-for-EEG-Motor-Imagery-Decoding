@@ -1,0 +1,25 @@
+{
+  "core_conclusion": "Evaluate output calibration, between-subject parameter associations, and paired fusion gains without assuming uniform benefit.",
+  "archetype": "quantitative grid",
+  "backend": "Python/matplotlib",
+  "width_mm": 183,
+  "min_text_pt": 6.5,
+  "exports": [
+    "PNG",
+    "SVG",
+    "PDF",
+    "CSV"
+  ],
+  "statistical_units": "9 subjects per dataset for correlations and paired subject changes",
+  "correlation_family": "56 tests: 2 datasets x (3 learned log-scales + 4 normalized weights) x 4 error metrics",
+  "correlation_test": "Exact permutation of pairings; absolute Spearman rho; Holm adjustment across 56 tests",
+  "null_assumption": "Subject-level pairings are exchangeable under independence; this is not a causal test.",
+  "reliability_diagrams": "All test trials pooled, descriptive; no bin intervals or significance claims",
+  "exclusions": "None",
+  "baseline_boundary": "The final exit is not an independently trained single-exit model",
+  "public_label_policy": "No random-initialization identifier or run count in figures",
+  "sources": [
+    "provided predicted probabilities",
+    "provided checkpoint parameters"
+  ]
+}

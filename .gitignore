@@ -1,0 +1,28 @@
+# Python caches and local environments
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.venv/
+venv/
+
+# IDE and OS metadata
+.idea/
+.vscode/
+*.code-workspace
+.DS_Store
+Thumbs.db
+
+# Training data, caches, and heavyweight model artifacts
+data/
+data_cache/
+preprocessed_cache/
+checkpoints/
+*.ckpt
+*.pt
+*.pth
+predictions.npz
+
+# Local temporary outputs
+tmp/
+temp/

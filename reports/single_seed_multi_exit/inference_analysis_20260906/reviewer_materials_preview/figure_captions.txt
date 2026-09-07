@@ -1,0 +1,31 @@
+01_calibration_summary
+EN: Calibration and discrimination. Each entry is the mean of nine subject-level metrics. ECE uses 15 equal-width top-confidence bins; NLL uses hard labels and natural logarithms; Brier is summed over classes before averaging over trials. Fusion rows are shaded only to identify the evaluated output, not to indicate statistical significance.
+中文: 校准与分类性能表。每项为9位被试各自指标的等权平均。ECE使用15个等宽置信度分箱；NLL使用真实硬标签和自然对数；Brier先在类别维度求和，再对试次取平均。浅色背景仅用于标识融合输出，不代表统计显著。2a与2b的类别数不同，不据此直接比较任务难度。
+
+02_reliability_overview
+EN: Reliability diagrams and confidence distributions for F and fusion. Test trials are pooled within each dataset for descriptive visualization; the lower panels expose bin support. The diagonal denotes perfect calibration. These pooled curves are not subject-level confidence intervals, and their ECE is distinct from the subject-averaged table values.
+中文: F出口与融合输出的可靠性曲线及置信度分布。每个数据集的测试试次在此图中合并，只作描述性展示；下排显示置信度分布，避免忽略稀疏分箱。对角线表示理想校准。这里没有置信区间，且合并试次后的ECE不等于校准表中按被试平均的ECE。
+
+03_reliability_all_exits_bcic2a
+EN: All five prediction outputs on IV-2a. Pooled ECE values are explicitly labeled and are not substituted for the subject-level mean calibration results.
+中文: IV-2a的全部5种输出，未选择性省略任何出口。图内明确标注的是合并试次后的Pooled ECE，不能直接替换表中按被试平均的ECE。
+
+03_reliability_all_exits_bcic2b
+EN: All five prediction outputs on IV-2b. Pooled ECE values are explicitly labeled and are not substituted for the subject-level mean calibration results.
+中文: IV-2b的全部5种输出，未选择性省略任何出口。图内明确标注的是合并试次后的Pooled ECE，不能直接替换表中按被试平均的ECE。
+
+04_weight_reliability_correlations
+EN: Exit-wise association across nine subjects. The upper rows show the effective clamped learned log-scales for S, M and D; the lower rows show normalized fusion weights. F has no separately learned log-scale in these checkpoints. Each association uses nine subject-level pairs. Exact permutation tests enumerate all 9! pairings using absolute Spearman correlation as the two-sided statistic. Holm adjustment covers all 56 tests. Outlined cells pass adjusted P <= 0.05 (0/56). A positive log-scale association or a negative weight association is directionally consistent with the reliability interpretation; neither establishes causality or sample-level uncertainty. Normalized weights also depend on fixed priors and other exits.
+中文: 以被试为单位的出口相关分析。上3行为S/M/D实际使用的学习对数尺度，下4行为归一化融合权重。这些checkpoint中F没有独立学习的s参数，因此不构造s(F)。每项相关均使用9对被试数据，不是将全局权重重复到每个试次。P值使用全部9!配对排列的精确双侧检验，56项比较统一做Holm校正。带边框单元格表示校正后P≤0.05，本次为0/56项。s与误差指标正相关、w与误差指标负相关才与其可靠性解释方向一致；但相关性不等于因果机制或试次级不确定性，归一化权重还受固定先验和其他出口影响。
+
+05_subject_fusion_gains
+EN: Paired changes in accuracy for all nine subjects per dataset. Bars show individual subjects, not averages with omitted error bars. The reference is the final exit of the same fitted multi-exit model. IV-2a has eight improvements and one tie; IV-2b has six improvements, one tie and two decreases. Corrections and newly introduced errors are retained in the source table.
+中文: 每个数据集9位被试的配对准确率变化，全部被试均保留。每条柱代表一位被试，不是均值柱，所以不添加误差线。参照为同一多出口模型的F出口。IV-2a有8人提升、1人持平；IV-2b有6人提升、1人持平、2人下降。纠正错误与新增错误的数量保留在配套表格中。
+
+06_logscale_error_scatter
+EN: Raw subject-level points underlying log-scale/error-rate correlations. All auxiliary exits and both datasets are shown without selecting the strongest associations. Labels are subject IDs. A fitted regression line is omitted because the displayed statistic is a rank correlation and the evidence is exploratory.
+中文: 学习对数尺度与错误率相关性的原始散点。两数据集、三个辅助出口全部展示，不只挑选最强相关。数字表示被试编号。这里展示的是秩相关，且属于探索性分析，因此没有强行拟合直线，也不能据此直接推断不确定性的生理或因果来源。
+
+07_exit_complementarity
+EN: Mean subject-level prediction disagreement and correlation of binary error indicators for all exit pairs. These summaries describe differences and shared failures, not causal evidence that a particular training component created complementary representations. No undefined subject correlation was excluded.
+中文: 各出口对的预测分歧比例及二元错误指示变量相关性，先在每位被试内计算，再等权平均。它们说明出口预测存在差异及共享错误，但不能仅凭此证明某个训练模块产生了互补表征。所有出口对均展示，本次不存在因相关系数未定义而剔除被试的情况。

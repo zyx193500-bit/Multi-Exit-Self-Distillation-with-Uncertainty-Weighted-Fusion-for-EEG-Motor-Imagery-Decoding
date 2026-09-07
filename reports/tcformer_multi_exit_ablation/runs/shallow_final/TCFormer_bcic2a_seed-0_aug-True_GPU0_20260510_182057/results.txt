@@ -1,0 +1,38 @@
+Results for model: TCFormer
+#Params: 254594
+Dataset: bcic2a
+Subject IDs: [1, 2, 3, 4, 5, 6, 7, 8, 9]
+
+Results for each subject:
+Subject 1 => Train Time: 35.54m, Test Time: 2.88s, Test Acc: 0.9410, Test Loss: 0.3844, Test Kappa: 0.9213
+  Adaptive Weights => Shallow: 0.2976, Mid: 0.0000, Deep: 0.0000, Final: 0.7024
+Subject 2 => Train Time: 34.72m, Test Time: 2.38s, Test Acc: 0.7153, Test Loss: 1.0570, Test Kappa: 0.6204
+  Adaptive Weights => Shallow: 0.2778, Mid: 0.0000, Deep: 0.0000, Final: 0.7222
+Subject 3 => Train Time: 34.63m, Test Time: 2.46s, Test Acc: 0.9826, Test Loss: 0.2605, Test Kappa: 0.9769
+  Adaptive Weights => Shallow: 0.2886, Mid: 0.0000, Deep: 0.0000, Final: 0.7114
+Subject 4 => Train Time: 35.57m, Test Time: 2.46s, Test Acc: 0.9028, Test Loss: 0.4811, Test Kappa: 0.8704
+  Adaptive Weights => Shallow: 0.2964, Mid: 0.0000, Deep: 0.0000, Final: 0.7036
+Subject 5 => Train Time: 34.78m, Test Time: 2.29s, Test Acc: 0.8160, Test Loss: 0.7724, Test Kappa: 0.7546
+  Adaptive Weights => Shallow: 0.2756, Mid: 0.0000, Deep: 0.0000, Final: 0.7244
+Subject 6 => Train Time: 34.27m, Test Time: 2.13s, Test Acc: 0.7083, Test Loss: 1.0646, Test Kappa: 0.6111
+  Adaptive Weights => Shallow: 0.3092, Mid: 0.0000, Deep: 0.0000, Final: 0.6908
+Subject 7 => Train Time: 34.45m, Test Time: 2.33s, Test Acc: 0.9410, Test Loss: 0.3819, Test Kappa: 0.9213
+  Adaptive Weights => Shallow: 0.3636, Mid: 0.0000, Deep: 0.0000, Final: 0.6364
+Subject 8 => Train Time: 34.63m, Test Time: 2.39s, Test Acc: 0.9132, Test Loss: 0.4561, Test Kappa: 0.8843
+  Adaptive Weights => Shallow: 0.3047, Mid: 0.0000, Deep: 0.0000, Final: 0.6953
+Subject 9 => Train Time: 34.64m, Test Time: 2.37s, Test Acc: 0.9028, Test Loss: 0.4882, Test Kappa: 0.8704
+  Adaptive Weights => Shallow: 0.2990, Mid: 0.0000, Deep: 0.0000, Final: 0.7010
+
+--- Summary Statistics ---
+Average Test Accuracy (Primary Output): 86.92 ¡À 9.41
+  - Shallow Exit Accuracy: 82.56 ¡À 11.43
+  - Final Exit Accuracy:   86.61 ¡À 9.41
+Average Adaptive Exit Weights:
+  - Shallow Exit Weight: 0.3014
+  - Mid Exit Weight:     0.0000
+  - Deep Exit Weight:    0.0000
+  - Final Exit Weight:   0.6986
+Average Test Kappa:    0.826 ¡À 0.126
+Average Test Loss:     0.594 ¡À 0.281
+Total Training Time: 313.24 min
+Average Response Time: 20.06 ms

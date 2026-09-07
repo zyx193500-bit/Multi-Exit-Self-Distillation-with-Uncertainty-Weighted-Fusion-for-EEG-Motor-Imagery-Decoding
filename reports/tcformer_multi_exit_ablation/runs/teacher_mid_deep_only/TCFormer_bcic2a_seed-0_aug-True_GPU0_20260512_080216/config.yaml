@@ -1,0 +1,104 @@
+accumulate_grad_batches: 2
+accumulate_grad_batches_2b: 3
+dataset_name: bcic2a
+early_stopping:
+  enabled: false
+  min_delta: 0.0
+  mode: max
+  monitor: val_acc
+  patience: 40
+  verbose: true
+experiment_name: teacher_mid_deep_only
+gpu_id: 0
+max_epochs: 1000
+max_epochs_2b: 500
+max_epochs_loso: 125
+max_epochs_loso_hgd: 77
+model: TCFormer
+model_kwargs:
+  D: 2
+  F1: 32
+  beta_1: 0.5
+  byot_ce_weight_deep: 1.0
+  byot_ce_weight_mid: 0.9
+  byot_ce_weight_shallow: 0.8
+  byot_distill_ramp_epochs: 20
+  byot_distill_start_epoch: 30
+  byot_hint_ramp_epochs: 20
+  byot_hint_start_epoch: 60
+  byot_hint_weight_deep: 0.1
+  byot_hint_weight_mid: 0.15
+  byot_hint_weight_shallow: 0.15
+  byot_kd_weight_deep: 0.7
+  byot_kd_weight_mid: 0.6
+  byot_kd_weight_shallow: 0.5
+  byot_normalize_hints: true
+  byot_proj_dim: 128
+  d_group: 16
+  distill_temperature: 3.0
+  dropout_conv: 0.4
+  dropout_tcn: 0.3
+  enable_exit_deep: true
+  enable_exit_final: true
+  enable_exit_mid: true
+  enable_exit_shallow: true
+  enable_hint_deep: true
+  enable_hint_mid: true
+  enable_hint_shallow: false
+  enable_kd_deep: true
+  enable_kd_mid: true
+  enable_kd_shallow: false
+  ensemble_loss_weight: 1.2
+  ensemble_prior_deep: 1.15
+  ensemble_prior_mid: 0.9
+  ensemble_prior_shallow: 0.45
+  ensemble_weight_mode: dynamic
+  fixed_weight_deep: 1.0
+  fixed_weight_final: 1.0
+  fixed_weight_mid: 1.0
+  fixed_weight_shallow: 1.0
+  kernel_length_tcn: 4
+  kv_heads: 2
+  lr: 0.0009
+  optimizer: adam
+  pool_length_1: 8
+  pool_length_2: 7
+  primary_output: ensemble
+  q_heads: 4
+  scheduler: true
+  student_loss_weight_mode: uncertainty
+  tcn_depth: 2
+  teacher_ensemble_weight: 3.0
+  teacher_loss_weight: 0.8
+  temp_kernel_lengths:
+  - 20
+  - 32
+  - 64
+  trans_depth: 5
+  trans_dropout: 0.4
+  use_group_attn: true
+  warmup_epochs: 20
+  warmup_epochs_loso: 3
+  weight_decay: 0.001
+model_kwargs_2b:
+  D: 1
+  trans_depth: 3
+plot_cm_average: true
+plot_cm_per_subject: true
+precision: 16-mixed
+preprocessing:
+  batch_size: 16
+  high_cut: null
+  interaug: true
+  low_cut: null
+  sfreq: 250
+  start: 0.0
+  stop: 0.0
+  z_scale: true
+result_group: tcformer_ablation
+save_best_checkpoint: true
+seed: 0
+selection_metric: val_acc
+selection_mode: max
+subject_ids: all
+z_scale: true

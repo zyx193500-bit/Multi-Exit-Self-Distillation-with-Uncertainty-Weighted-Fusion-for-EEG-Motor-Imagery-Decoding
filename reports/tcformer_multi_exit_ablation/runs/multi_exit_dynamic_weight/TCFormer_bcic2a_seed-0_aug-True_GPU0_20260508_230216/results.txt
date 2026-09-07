@@ -1,0 +1,40 @@
+Results for model: TCFormer
+#Params: 254594
+Dataset: bcic2a
+Subject IDs: [1, 2, 3, 4, 5, 6, 7, 8, 9]
+
+Results for each subject:
+Subject 1 => Train Time: 41.87m, Test Time: 3.38s, Test Acc: 0.9340, Test Loss: 0.4145, Test Kappa: 0.9120
+  Adaptive Weights => Shallow: 0.0926, Mid: 0.3188, Deep: 0.3650, Final: 0.2237
+Subject 2 => Train Time: 41.14m, Test Time: 2.78s, Test Acc: 0.7014, Test Loss: 1.1094, Test Kappa: 0.6019
+  Adaptive Weights => Shallow: 0.0871, Mid: 0.2981, Deep: 0.3467, Final: 0.2681
+Subject 3 => Train Time: 40.81m, Test Time: 2.88s, Test Acc: 0.9653, Test Loss: 0.3040, Test Kappa: 0.9537
+  Adaptive Weights => Shallow: 0.0991, Mid: 0.2939, Deep: 0.3349, Final: 0.2721
+Subject 4 => Train Time: 40.36m, Test Time: 2.80s, Test Acc: 0.8854, Test Loss: 0.5573, Test Kappa: 0.8472
+  Adaptive Weights => Shallow: 0.0898, Mid: 0.3208, Deep: 0.3708, Final: 0.2187
+Subject 5 => Train Time: 40.75m, Test Time: 2.79s, Test Acc: 0.8125, Test Loss: 0.7910, Test Kappa: 0.7500
+  Adaptive Weights => Shallow: 0.0921, Mid: 0.3101, Deep: 0.3590, Final: 0.2388
+Subject 6 => Train Time: 40.67m, Test Time: 2.83s, Test Acc: 0.7361, Test Loss: 1.0392, Test Kappa: 0.6481
+  Adaptive Weights => Shallow: 0.0911, Mid: 0.3170, Deep: 0.3638, Final: 0.2281
+Subject 7 => Train Time: 40.45m, Test Time: 2.62s, Test Acc: 0.9479, Test Loss: 0.3661, Test Kappa: 0.9306
+  Adaptive Weights => Shallow: 0.1018, Mid: 0.3077, Deep: 0.3513, Final: 0.2392
+Subject 8 => Train Time: 40.59m, Test Time: 2.69s, Test Acc: 0.9201, Test Loss: 0.4557, Test Kappa: 0.8935
+  Adaptive Weights => Shallow: 0.0961, Mid: 0.3009, Deep: 0.3483, Final: 0.2547
+Subject 9 => Train Time: 40.69m, Test Time: 2.98s, Test Acc: 0.9132, Test Loss: 0.4699, Test Kappa: 0.8843
+  Adaptive Weights => Shallow: 0.0926, Mid: 0.3013, Deep: 0.3424, Final: 0.2637
+
+--- Summary Statistics ---
+Average Test Accuracy (Primary Output): 86.84 ¡À 9.04
+  - Shallow Exit Accuracy: 82.91 ¡À 8.21
+  - Mid Exit Accuracy:     86.30 ¡À 8.97
+  - Deep Exit Accuracy:    86.54 ¡À 8.88
+  - Final Exit Accuracy:   85.88 ¡À 9.55
+Average Adaptive Exit Weights:
+  - Shallow Exit Weight: 0.0936
+  - Mid Exit Weight:     0.3076
+  - Deep Exit Weight:    0.3536
+  - Final Exit Weight:   0.2452
+Average Test Kappa:    0.825 ¡À 0.120
+Average Test Loss:     0.612 ¡À 0.280
+Total Training Time: 367.33 min
+Average Response Time: 24.18 ms

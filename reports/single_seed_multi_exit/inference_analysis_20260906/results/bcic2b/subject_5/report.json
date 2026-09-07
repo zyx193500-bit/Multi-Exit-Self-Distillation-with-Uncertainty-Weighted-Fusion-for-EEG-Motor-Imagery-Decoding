@@ -1,0 +1,341 @@
+{
+  "version": 1,
+  "dataset": "bcic2b",
+  "seed": 0,
+  "subject": 5,
+  "checkpoint_sha256": "113585bcdd4160c5c5b3ecb79acb85b56bf53853f3374d407373107cd5eaca60",
+  "checkpoint_path": "C:\\Users\\zyx19\\Desktop\\zhengliu\\\u84b8\u998f\\TCFormer\\TCFormer result\\TCFormer_bcic2b_seed-0_aug-True_GPU0_20260507_183904\\checkpoints\\subject_5_best.ckpt",
+  "checkpoint_epoch_zero_based": 132,
+  "strict_load": true,
+  "precision": "32",
+  "inference_batch_size": 2,
+  "archived_config": {
+    "accumulate_grad_batches": 3,
+    "accumulate_grad_batches_2b": 3,
+    "dataset_name": "bcic2b",
+    "early_stopping": {
+      "enabled": false,
+      "min_delta": 0.0,
+      "mode": "max",
+      "monitor": "val_acc",
+      "patience": 40,
+      "verbose": true
+    },
+    "gpu_id": 0,
+    "max_epochs": 500,
+    "max_epochs_2b": 500,
+    "max_epochs_loso": 125,
+    "max_epochs_loso_hgd": 77,
+    "model": "TCFormer",
+    "model_kwargs": {
+      "D": 1,
+      "F1": 32,
+      "beta_1": 0.5,
+      "byot_ce_weight_deep": 1.0,
+      "byot_ce_weight_mid": 0.9,
+      "byot_ce_weight_shallow": 0.8,
+      "byot_distill_ramp_epochs": 20,
+      "byot_distill_start_epoch": 30,
+      "byot_hint_ramp_epochs": 20,
+      "byot_hint_start_epoch": 60,
+      "byot_hint_weight_deep": 0.1,
+      "byot_hint_weight_mid": 0.15,
+      "byot_hint_weight_shallow": 0.15,
+      "byot_kd_weight_deep": 0.7,
+      "byot_kd_weight_mid": 0.6,
+      "byot_kd_weight_shallow": 0.5,
+      "byot_normalize_hints": true,
+      "byot_proj_dim": 128,
+      "d_group": 16,
+      "distill_temperature": 3.0,
+      "dropout_conv": 0.4,
+      "dropout_tcn": 0.3,
+      "ensemble_loss_weight": 1.2,
+      "ensemble_prior_deep": 1.15,
+      "ensemble_prior_mid": 0.9,
+      "ensemble_prior_shallow": 0.45,
+      "kernel_length_tcn": 4,
+      "kv_heads": 2,
+      "lr": 0.0009,
+      "optimizer": "adam",
+      "pool_length_1": 8,
+      "pool_length_2": 7,
+      "primary_output": "ensemble",
+      "q_heads": 4,
+      "scheduler": true,
+      "tcn_depth": 2,
+      "teacher_ensemble_weight": 3.0,
+      "teacher_loss_weight": 0.8,
+      "temp_kernel_lengths": [
+        20,
+        32,
+        64
+      ],
+      "trans_depth": 3,
+      "trans_dropout": 0.4,
+      "use_group_attn": true,
+      "warmup_epochs": 20,
+      "warmup_epochs_loso": 3,
+      "weight_decay": 0.001
+    },
+    "model_kwargs_2b": {
+      "D": 1,
+      "trans_depth": 3
+    },
+    "plot_cm_average": true,
+    "plot_cm_per_subject": true,
+    "precision": "16-mixed",
+    "preprocessing": {
+      "batch_size": 16,
+      "high_cut": null,
+      "interaug": true,
+      "low_cut": null,
+      "sfreq": 250,
+      "start": 0.0,
+      "stop": -0.5,
+      "z_scale": true
+    },
+    "save_best_checkpoint": true,
+    "seed": 0,
+    "selection_metric": "val_acc",
+    "selection_mode": "max",
+    "subject_ids": "all",
+    "z_scale": true
+  },
+  "checkpoint_hparams": {
+    "n_classes": 2,
+    "lr": 0.0009,
+    "weight_decay": 0.001,
+    "optimizer": "adam",
+    "scheduler": true,
+    "max_epochs": 500,
+    "warmup_epochs": 20,
+    "beta_1": 0.5,
+    "warmup_epochs_loso": 3,
+    "byot_proj_dim": 128,
+    "distill_temperature": 3.0,
+    "primary_output": "ensemble",
+    "ensemble_loss_weight": 1.2,
+    "teacher_loss_weight": 0.8,
+    "teacher_ensemble_weight": 3.0,
+    "ensemble_prior_shallow": 0.45,
+    "ensemble_prior_mid": 0.9,
+    "ensemble_prior_deep": 1.15,
+    "byot_distill_start_epoch": 30,
+    "byot_distill_ramp_epochs": 20,
+    "byot_hint_start_epoch": 60,
+    "byot_hint_ramp_epochs": 20,
+    "byot_normalize_hints": true,
+    "byot_ce_weight_shallow": 0.8,
+    "byot_ce_weight_mid": 0.9,
+    "byot_ce_weight_deep": 1.0,
+    "byot_kd_weight_shallow": 0.5,
+    "byot_kd_weight_mid": 0.6,
+    "byot_kd_weight_deep": 0.7,
+    "byot_hint_weight_shallow": 0.15,
+    "byot_hint_weight_mid": 0.15,
+    "byot_hint_weight_deep": 0.1,
+    "n_channels": 3,
+    "F1": 32,
+    "temp_kernel_lengths": [
+      20,
+      32,
+      64
+    ],
+    "pool_length_1": 8,
+    "pool_length_2": 7,
+    "D": 1,
+    "dropout_conv": 0.4,
+    "d_group": 16,
+    "tcn_depth": 2,
+    "kernel_length_tcn": 4,
+    "dropout_tcn": 0.3,
+    "use_group_attn": true,
+    "q_heads": 4,
+    "kv_heads": 2,
+    "trans_depth": 3,
+    "trans_dropout": 0.4
+  },
+  "data": {
+    "preprocessing": {
+      "batch_size": 16,
+      "high_cut": null,
+      "interaug": true,
+      "low_cut": null,
+      "sfreq": 250,
+      "start": 0.0,
+      "stop": -0.5,
+      "z_scale": true,
+      "num_workers": 0
+    },
+    "cache_signature": "7b4f378590869aa66d981801f32b06f5a8b57ccd256efec728a3a94d16b50d25",
+    "train_n": 420,
+    "test_n": 320,
+    "test_shape": [
+      320,
+      3,
+      1000
+    ],
+    "class_names": [
+      "hand(L)",
+      "hand(R)"
+    ],
+    "raw_files": {
+      "B05T.mat": {
+        "path": "E:\\EEG\\data_cache\\mne_data\\MNE-bnci-data\\database\\data-sets\\004-2014\\B05T.mat",
+        "sha256": "53166e2cf1a97576262b3f2f27395f489af6fda15ade5c3b3cdd2c89f7df0d79"
+      },
+      "B05E.mat": {
+        "path": "E:\\EEG\\data_cache\\mne_data\\MNE-bnci-data\\database\\data-sets\\004-2014\\B05E.mat",
+        "sha256": "a395a547e62241f6bf69b1b42828d394f997189271ebd90d5ff4dde4e4e9e757"
+      }
+    },
+    "normalization": "Project BaseDataModule._z_scale, fitted on training data",
+    "test_augmentation": false,
+    "session_counts_all": {
+      "session_0": 120,
+      "session_1": 140,
+      "session_2": 160,
+      "session_3": 160,
+      "session_4": 160
+    }
+  },
+  "weights": {
+    "shallow": 0.12046129256486893,
+    "mid": 0.2632752060890198,
+    "deep": 0.32035964727401733,
+    "final": 0.2959038019180298
+  },
+  "n_parameters": 215442,
+  "preprocessing_seconds": 0.07406709999999972,
+  "inference_seconds_including_transfer_and_initialization": 1.7673170999999996,
+  "timing_note": "Whole test pass, not a steady-state latency benchmark",
+  "archived_accuracy_pct": 99.37,
+  "accuracy_minus_archived_pp": 0.0049999999999954525,
+  "metrics": [
+    {
+      "dataset": "bcic2b",
+      "seed": 0,
+      "subject": 5,
+      "exit": "shallow",
+      "n_trials": 320,
+      "accuracy_pct": 96.25,
+      "kappa": 0.925,
+      "ece_15": 0.04756312244010266,
+      "nll": 0.11058526095892818,
+      "brier_sum": 0.05420053348898035,
+      "mean_confidence": 0.9251798724184569
+    },
+    {
+      "dataset": "bcic2b",
+      "seed": 0,
+      "subject": 5,
+      "exit": "mid",
+      "n_trials": 320,
+      "accuracy_pct": 99.0625,
+      "kappa": 0.98125,
+      "ece_15": 0.02150565429928597,
+      "nll": 0.04258339645081258,
+      "brier_sum": 0.01526744880274144,
+      "mean_confidence": 0.972048165385241
+    },
+    {
+      "dataset": "bcic2b",
+      "seed": 0,
+      "subject": 5,
+      "exit": "deep",
+      "n_trials": 320,
+      "accuracy_pct": 99.375,
+      "kappa": 0.9875,
+      "ece_15": 0.02766698016517072,
+      "nll": 0.04542842509764868,
+      "brier_sum": 0.015810152699058777,
+      "mean_confidence": 0.970267672124999
+    },
+    {
+      "dataset": "bcic2b",
+      "seed": 0,
+      "subject": 5,
+      "exit": "final",
+      "n_trials": 320,
+      "accuracy_pct": 99.375,
+      "kappa": 0.9875,
+      "ece_15": 0.023087132104472465,
+      "nll": 0.03989911152042265,
+      "brier_sum": 0.012156067508037905,
+      "mean_confidence": 0.9739936314208675
+    },
+    {
+      "dataset": "bcic2b",
+      "seed": 0,
+      "subject": 5,
+      "exit": "ensemble",
+      "n_trials": 320,
+      "accuracy_pct": 99.375,
+      "kappa": 0.9875,
+      "ece_15": 0.02582495616079178,
+      "nll": 0.0448244281471144,
+      "brier_sum": 0.014734531102900622,
+      "mean_confidence": 0.9693889495350134
+    }
+  ],
+  "confusion_matrices": {
+    "shallow": [
+      [
+        159,
+        1
+      ],
+      [
+        11,
+        149
+      ]
+    ],
+    "mid": [
+      [
+        159,
+        1
+      ],
+      [
+        2,
+        158
+      ]
+    ],
+    "deep": [
+      [
+        159,
+        1
+      ],
+      [
+        1,
+        159
+      ]
+    ],
+    "final": [
+      [
+        159,
+        1
+      ],
+      [
+        1,
+        159
+      ]
+    ],
+    "ensemble": [
+      [
+        159,
+        1
+      ],
+      [
+        1,
+        159
+      ]
+    ]
+  },
+  "fusion_vs_final": {
+    "reference": "Final exit in the same multi-exit model; NOT independent single-exit baseline",
+    "fusion_minus_final_pp": 0.0,
+    "rescued_final_errors": 0,
+    "introduced_errors": 0,
+    "prediction_disagreement_pct": 0.0
+  }
+}

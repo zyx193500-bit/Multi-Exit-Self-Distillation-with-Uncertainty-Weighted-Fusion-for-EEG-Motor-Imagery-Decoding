@@ -1,0 +1,121 @@
+{
+  "aggregation": "9 subjects per dataset; equal-weight subject means unless pooled is stated",
+  "comparison": "Fusion versus F within the same multi-exit model",
+  "calibration": [
+    {
+      "dataset": "IV-2a",
+      "exit": "S",
+      "n_subjects": 9,
+      "accuracy_pct": 83.02469135802468,
+      "ece_15": 0.06574437526191998,
+      "nll": 0.49211273219112633,
+      "brier_sum": 0.2538849963018048
+    },
+    {
+      "dataset": "IV-2a",
+      "exit": "M",
+      "n_subjects": 9,
+      "accuracy_pct": 86.38117283950618,
+      "ece_15": 0.08023688716484716,
+      "nll": 0.48925796126837795,
+      "brier_sum": 0.22905638473499346
+    },
+    {
+      "dataset": "IV-2a",
+      "exit": "D",
+      "n_subjects": 9,
+      "accuracy_pct": 86.57407407407408,
+      "ece_15": 0.08210308122655723,
+      "nll": 0.49015401235473266,
+      "brier_sum": 0.22799763767664796
+    },
+    {
+      "dataset": "IV-2a",
+      "exit": "F",
+      "n_subjects": 9,
+      "accuracy_pct": 85.99537037037037,
+      "ece_15": 0.08221392900089501,
+      "nll": 0.4876611892934864,
+      "brier_sum": 0.2286476274733329
+    },
+    {
+      "dataset": "IV-2a",
+      "exit": "Fusion",
+      "n_subjects": 9,
+      "accuracy_pct": 87.03703703703704,
+      "ece_15": 0.07799870252157656,
+      "nll": 0.4696682805653664,
+      "brier_sum": 0.22318703195801723
+    },
+    {
+      "dataset": "IV-2b",
+      "exit": "S",
+      "n_subjects": 9,
+      "accuracy_pct": 86.83035714285714,
+      "ece_15": 0.05369536148184681,
+      "nll": 0.3115367114737028,
+      "brier_sum": 0.1917235460508197
+    },
+    {
+      "dataset": "IV-2b",
+      "exit": "M",
+      "n_subjects": 9,
+      "accuracy_pct": 89.37996031746032,
+      "ece_15": 0.05210027687823872,
+      "nll": 0.2819889449338472,
+      "brier_sum": 0.16767454813111154
+    },
+    {
+      "dataset": "IV-2b",
+      "exit": "D",
+      "n_subjects": 9,
+      "accuracy_pct": 89.04761904761905,
+      "ece_15": 0.056472628880942094,
+      "nll": 0.2851677752879008,
+      "brier_sum": 0.16975849563507742
+    },
+    {
+      "dataset": "IV-2b",
+      "exit": "F",
+      "n_subjects": 9,
+      "accuracy_pct": 89.76190476190476,
+      "ece_15": 0.05215090866906268,
+      "nll": 0.2816458345432301,
+      "brier_sum": 0.16502901051919494
+    },
+    {
+      "dataset": "IV-2b",
+      "exit": "Fusion",
+      "n_subjects": 9,
+      "accuracy_pct": 89.99007936507935,
+      "ece_15": 0.053138824080660015,
+      "nll": 0.27340805929873085,
+      "brier_sum": 0.16244458503362458
+    }
+  ],
+  "subject_gains": {
+    "bcic2a": {
+      "improved": 8,
+      "unchanged": 1,
+      "decreased": 0,
+      "mean_gain_pp": 1.0416666666666667,
+      "rescued_errors": 40,
+      "introduced_errors": 13
+    },
+    "bcic2b": {
+      "improved": 6,
+      "unchanged": 1,
+      "decreased": 2,
+      "mean_gain_pp": 0.2281746031746032,
+      "rescued_errors": 31,
+      "introduced_errors": 24
+    }
+  },
+  "correlations_holm_significant": [],
+  "correlations_total": 56,
+  "n_test_trials": {
+    "IV-2a": 2592,
+    "IV-2b": 2840
+  },
+  "no_manuscript_changes": true
+}

@@ -1,0 +1,67 @@
+{
+  "checkpoint": "C:\\Users\\zyx19\\Desktop\\zhengliu\\蒸馏\\TCFormer\\results\\TCFormer_bcic2a_seed-0_aug-True_GPU0_20260503_1331\\checkpoints\\subject_7_best.ckpt",
+  "config": "C:\\Users\\zyx19\\Desktop\\zhengliu\\蒸馏\\TCFormer\\results\\TCFormer_bcic2a_seed-0_aug-True_GPU0_20260503_1331\\config.yaml",
+  "subject_id": 7,
+  "sample_index": 9,
+  "true_label": 3,
+  "true_label_name": "tongue",
+  "class_names": [
+    "feet",
+    "hand(L)",
+    "hand(R)",
+    "tongue"
+  ],
+  "eeg_channel_names": [
+    "Fz",
+    "FC3",
+    "FC1",
+    "FCz",
+    "FC2",
+    "FC4",
+    "C5",
+    "C3",
+    "C1",
+    "Cz",
+    "C2",
+    "C4",
+    "C6",
+    "CP3",
+    "CP1",
+    "CPz",
+    "CP2",
+    "CP4",
+    "P1",
+    "Pz",
+    "P2",
+    "POz"
+  ],
+  "pred_name": "tongue",
+  "confidence": 0.967832088470459,
+  "primary_pred": 3,
+  "final_pred": 3,
+  "ensemble_pred": 3,
+  "primary_probs": [
+    0.010942328721284866,
+    0.01087060198187828,
+    0.010355050675570965,
+    0.967832088470459
+  ],
+  "final_probs": [
+    0.007810567505657673,
+    0.009424888528883457,
+    0.008999734185636044,
+    0.9737648367881775
+  ],
+  "ensemble_probs": [
+    0.010942328721284866,
+    0.01087060198187828,
+    0.010355050675570965,
+    0.967832088470459
+  ],
+  "weights": [
+    0.10695283114910126,
+    0.3202406167984009,
+    0.367412269115448,
+    0.2053942233324051
+  ]
+}

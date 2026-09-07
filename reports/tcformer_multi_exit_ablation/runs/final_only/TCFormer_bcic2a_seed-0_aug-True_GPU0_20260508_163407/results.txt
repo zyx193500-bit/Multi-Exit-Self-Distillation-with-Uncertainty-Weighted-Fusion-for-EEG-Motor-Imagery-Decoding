@@ -1,0 +1,21 @@
+Results for model: TCFormer
+#Params: 254594
+Dataset: bcic2a
+Subject IDs: [1]
+
+Results for each subject:
+Subject 1 => Train Time: 0.10m, Test Time: 2.69s, Test Acc: 0.2500, Test Loss: 1.5280, Test Kappa: 0.0000
+  Adaptive Weights => Shallow: 0.0000, Mid: 0.0000, Deep: 0.0000, Final: 1.0000
+
+--- Summary Statistics ---
+Average Test Accuracy (Primary Output): 25.00 ¡À 0.00
+  - Final Exit Accuracy:   25.00 ¡À 0.00
+Average Adaptive Exit Weights:
+  - Shallow Exit Weight: 0.0000
+  - Mid Exit Weight:     0.0000
+  - Deep Exit Weight:    0.0000
+  - Final Exit Weight:   1.0000
+Average Test Kappa:    0.000 ¡À 0.000
+Average Test Loss:     1.528 ¡À 0.000
+Total Training Time: 0.10 min
+Average Response Time: 15.96 ms

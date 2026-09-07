@@ -1,0 +1,5 @@
+status=starting
+subject_id=1
+epoch=1
+max_epochs=1
+global_step=0

@@ -1,0 +1,131 @@
+dataset_name: ''
+subject_ids: all
+max_epochs: 1000
+max_epochs_2b: 500
+max_epochs_loso: 125
+max_epochs_loso_hgd: 77
+seed: 0
+save_best_checkpoint: true
+selection_metric: val_acc
+selection_mode: max
+precision: 16-mixed
+accumulate_grad_batches: 2
+accumulate_grad_batches_2b: 3
+early_stopping:
+  enabled: false
+  monitor: val_acc
+  mode: max
+  patience: 40
+  min_delta: 0.0
+  verbose: true
+z_scale: true
+interaug: true
+preprocessing:
+  bcic2a:
+    sfreq: 250
+    low_cut: null
+    high_cut: null
+    start: 0.0
+    stop: 0.0
+    batch_size: 16
+  bcic2b:
+    sfreq: 250
+    low_cut: null
+    high_cut: null
+    start: 0.0
+    stop: -0.5
+    batch_size: 16
+  bcic3:
+    sfreq: 100
+    low_cut: 0
+    high_cut: 40
+    start: 0.0
+    stop: 0.0
+    batch_size: 28
+    channel_selection: true
+  reh_mi:
+    sfreq: 128
+    low_cut: 4
+    high_cut: 50
+    start: 0.0
+    stop: 0.0
+    batch_size: 48
+  hgd:
+    sfreq: 250
+    low_cut: 4
+    high_cut: null
+    start: 0.0
+    stop: 0.0
+    batch_size: 48
+    remove_artifacts: true
+model: TCFormer
+model_kwargs:
+  F1: 32
+  temp_kernel_lengths:
+  - 20
+  - 32
+  - 64
+  d_group: 16
+  D: 2
+  pool_length_1: 8
+  pool_length_2: 7
+  dropout_conv: 0.4
+  use_group_attn: true
+  q_heads: 4
+  kv_heads: 2
+  trans_depth: 5
+  trans_dropout: 0.4
+  tcn_depth: 2
+  kernel_length_tcn: 4
+  dropout_tcn: 0.3
+  lr: 0.0009
+  beta_1: 0.5
+  weight_decay: 0.001
+  optimizer: adam
+  scheduler: true
+  warmup_epochs: 20
+  warmup_epochs_loso: 3
+  byot_proj_dim: 128
+  distill_temperature: 3.0
+  primary_output: ensemble
+  ensemble_loss_weight: 1.2
+  teacher_loss_weight: 0.8
+  teacher_ensemble_weight: 3.0
+  ensemble_prior_shallow: 0.45
+  ensemble_prior_mid: 0.9
+  ensemble_prior_deep: 1.15
+  byot_distill_start_epoch: 30
+  byot_distill_ramp_epochs: 20
+  byot_hint_start_epoch: 60
+  byot_hint_ramp_epochs: 20
+  byot_normalize_hints: true
+  byot_ce_weight_shallow: 0.8
+  byot_ce_weight_mid: 0.9
+  byot_ce_weight_deep: 1.0
+  byot_kd_weight_shallow: 0.5
+  byot_kd_weight_mid: 0.6
+  byot_kd_weight_deep: 0.7
+  byot_hint_weight_shallow: 0.15
+  byot_hint_weight_mid: 0.15
+  byot_hint_weight_deep: 0.1
+  enable_exit_shallow: true
+  enable_exit_mid: true
+  enable_exit_deep: true
+  enable_exit_final: true
+  enable_kd_shallow: false
+  enable_kd_mid: true
+  enable_kd_deep: true
+  enable_hint_shallow: false
+  enable_hint_mid: true
+  enable_hint_deep: true
+  ensemble_weight_mode: dynamic
+  student_loss_weight_mode: uncertainty
+  fixed_weight_shallow: 1.0
+  fixed_weight_mid: 1.0
+  fixed_weight_deep: 1.0
+  fixed_weight_final: 1.0
+model_kwargs_2b:
+  D: 1
+  trans_depth: 3
+experiment_name: teacher_no_supervise_shallow
+result_group: tcformer_ablation

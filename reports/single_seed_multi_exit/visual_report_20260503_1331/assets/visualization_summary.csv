@@ -1,0 +1,10 @@
+﻿subject_id,sample_index,true_name,pred_name,confidence,test_acc,test_kappa,test_loss,train_time,test_time,top5_saliency,top5_gradxinput,subject_dir_name
+1,8,hand(L),hand(L),0.695795,0.930600,0.907400,0.429400,37.03m,2.88s,"C2, C4, CP4, CPz, FC4","C2, C4, CP4, CPz, FC4",TCFormer_bcic2a_seed-0_aug-True_GPU0_20260503_1331_subject1_sample8
+2,1,hand(L),hand(L),0.646495,0.701400,0.601900,1.109400,36.19m,2.38s,"C3, CPz, C4, Cz, FC3","C3, C4, CPz, Cz, FC3",TCFormer_bcic2a_seed-0_aug-True_GPU0_20260503_1331_subject2_sample1
+3,0,feet,feet,0.967503,0.975700,0.967600,0.274400,36.28m,2.31s,"CPz, C4, CP3, Cz, FCz","CPz, Cz, C4, CP3, FCz",TCFormer_bcic2a_seed-0_aug-True_GPU0_20260503_1331_subject3_sample0
+4,12,feet,feet,0.968661,0.892400,0.856500,0.525200,36.19m,2.26s,"POz, CP3, C6, Cz, CP2","POz, CP3, C6, CP2, Cz",TCFormer_bcic2a_seed-0_aug-True_GPU0_20260503_1331_subject4_sample12
+5,2,hand(L),hand(L),0.956547,0.812500,0.750000,0.791000,36.44m,2.35s,"C3, C5, CPz, CP3, C1","C3, C5, CPz, CP3, C1",TCFormer_bcic2a_seed-0_aug-True_GPU0_20260503_1331_subject5_sample2
+6,1,hand(L),hand(L),0.838853,0.736100,0.648100,1.039200,36.56m,2.35s,"Cz, CP2, CP4, P2, P1","Cz, CP2, CP4, FCz, FC3",TCFormer_bcic2a_seed-0_aug-True_GPU0_20260503_1331_subject6_sample1
+7,9,tongue,tongue,0.967832,0.951400,0.935200,0.388900,37.22m,2.32s,"C3, Cz, CPz, CP3, C1","Cz, C3, CPz, CP3, C1",TCFormer_bcic2a_seed-0_aug-True_GPU0_20260503_1331_subject7_sample9
+8,0,feet,feet,0.977933,0.920100,0.893500,0.455700,37.66m,2.45s,"POz, CPz, CP3, P2, CP2","POz, CPz, CP3, P2, CP2",TCFormer_bcic2a_seed-0_aug-True_GPU0_20260503_1331_subject8_sample0
+9,0,feet,feet,0.962896,0.913200,0.884300,0.469900,37.33m,2.58s,"CPz, Pz, FC3, CP4, C5","CPz, FC3, Pz, C5, C1",TCFormer_bcic2a_seed-0_aug-True_GPU0_20260503_1331_subject9_sample0

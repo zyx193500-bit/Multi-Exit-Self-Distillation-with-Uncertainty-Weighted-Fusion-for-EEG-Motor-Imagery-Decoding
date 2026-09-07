@@ -1,0 +1,68 @@
+{
+  "input_verification": "complete; 18 models and 5432 test trials",
+  "metric_recomputation": "all match independently recomputed saved values",
+  "weight_reconstruction": "all match exp(-s), fixed priors, and final coefficient",
+  "permutation_test": "362880 exact pairings for each of 56 associations",
+  "p_value_family": "Holm across all 56 associations, no favorable subset",
+  "between_subject_error_bars": "not drawn; individual subjects retained in paired plots",
+  "all_exits_and_subjects_retained": true,
+  "figure_checks": [
+    {
+      "figure": "01_calibration_summary",
+      "canvas_text_bounds": "passed",
+      "panels": 1,
+      "width_mm": 183.0,
+      "height_mm": 106.68
+    },
+    {
+      "figure": "02_reliability_overview",
+      "canvas_text_bounds": "passed",
+      "panels": 4,
+      "width_mm": 183.0,
+      "height_mm": 149.86
+    },
+    {
+      "figure": "03_reliability_all_exits_bcic2a",
+      "canvas_text_bounds": "passed",
+      "panels": 6,
+      "width_mm": 183.0,
+      "height_mm": 137.16
+    },
+    {
+      "figure": "03_reliability_all_exits_bcic2b",
+      "canvas_text_bounds": "passed",
+      "panels": 6,
+      "width_mm": 183.0,
+      "height_mm": 137.16
+    },
+    {
+      "figure": "04_weight_reliability_correlations",
+      "canvas_text_bounds": "passed",
+      "panels": 3,
+      "width_mm": 183.0,
+      "height_mm": 139.7
+    },
+    {
+      "figure": "05_subject_fusion_gains",
+      "canvas_text_bounds": "passed",
+      "panels": 2,
+      "width_mm": 183.0,
+      "height_mm": 127.0
+    },
+    {
+      "figure": "06_logscale_error_scatter",
+      "canvas_text_bounds": "passed",
+      "panels": 6,
+      "width_mm": 183.0,
+      "height_mm": 190.5
+    },
+    {
+      "figure": "07_exit_complementarity",
+      "canvas_text_bounds": "passed",
+      "panels": 8,
+      "width_mm": 183.0,
+      "height_mm": 165.1
+    }
+  ],
+  "manuscript_untouched": true
+}

@@ -1,0 +1,415 @@
+{
+  "version": 1,
+  "dataset": "bcic2a",
+  "seed": 0,
+  "subject": 1,
+  "checkpoint_sha256": "28fbc29d4ee5b60e394c12f43c2aa1ec2501a9b0fb72165751f63e01ee7d154b",
+  "checkpoint_path": "C:\\Users\\zyx19\\Desktop\\zhengliu\\\u84b8\u998f\\TCFormer\\TCFormer result\\TCFormer_bcic2a_seed-0_aug-True_GPU0_20260503_1331\\checkpoints\\subject_1_best.ckpt",
+  "checkpoint_epoch_zero_based": 507,
+  "strict_load": true,
+  "precision": "32",
+  "inference_batch_size": 2,
+  "archived_config": {
+    "accumulate_grad_batches": 2,
+    "dataset_name": "bcic2a",
+    "early_stopping": {
+      "enabled": false,
+      "min_delta": 0.0,
+      "mode": "max",
+      "monitor": "val_acc",
+      "patience": 40,
+      "verbose": true
+    },
+    "gpu_id": 0,
+    "max_epochs": 1000,
+    "max_epochs_2b": 500,
+    "max_epochs_loso": 125,
+    "max_epochs_loso_hgd": 77,
+    "model": "TCFormer",
+    "model_kwargs": {
+      "D": 2,
+      "F1": 32,
+      "beta_1": 0.5,
+      "byot_ce_weight_deep": 1.0,
+      "byot_ce_weight_mid": 0.9,
+      "byot_ce_weight_shallow": 0.8,
+      "byot_distill_ramp_epochs": 20,
+      "byot_distill_start_epoch": 30,
+      "byot_hint_ramp_epochs": 20,
+      "byot_hint_start_epoch": 60,
+      "byot_hint_weight_deep": 0.1,
+      "byot_hint_weight_mid": 0.15,
+      "byot_hint_weight_shallow": 0.15,
+      "byot_kd_weight_deep": 0.7,
+      "byot_kd_weight_mid": 0.6,
+      "byot_kd_weight_shallow": 0.5,
+      "byot_normalize_hints": true,
+      "byot_proj_dim": 128,
+      "d_group": 16,
+      "distill_temperature": 3.0,
+      "dropout_conv": 0.4,
+      "dropout_tcn": 0.3,
+      "ensemble_loss_weight": 1.2,
+      "ensemble_prior_deep": 1.15,
+      "ensemble_prior_mid": 0.9,
+      "ensemble_prior_shallow": 0.45,
+      "kernel_length_tcn": 4,
+      "kv_heads": 2,
+      "lr": 0.0009,
+      "optimizer": "adam",
+      "pool_length_1": 8,
+      "pool_length_2": 7,
+      "primary_output": "ensemble",
+      "q_heads": 4,
+      "scheduler": true,
+      "tcn_depth": 2,
+      "teacher_ensemble_weight": 3.0,
+      "teacher_loss_weight": 0.8,
+      "temp_kernel_lengths": [
+        20,
+        32,
+        64
+      ],
+      "trans_depth": 5,
+      "trans_dropout": 0.4,
+      "use_group_attn": true,
+      "warmup_epochs": 20,
+      "warmup_epochs_loso": 3,
+      "weight_decay": 0.001
+    },
+    "plot_cm_average": true,
+    "plot_cm_per_subject": true,
+    "precision": "16-mixed",
+    "preprocessing": {
+      "batch_size": 16,
+      "high_cut": null,
+      "interaug": true,
+      "low_cut": null,
+      "sfreq": 250,
+      "start": 0.0,
+      "stop": 0.0,
+      "z_scale": true
+    },
+    "save_best_checkpoint": true,
+    "seed": 0,
+    "selection_metric": "val_acc",
+    "selection_mode": "max",
+    "subject_ids": "all",
+    "z_scale": true
+  },
+  "checkpoint_hparams": {
+    "n_classes": 4,
+    "lr": 0.0009,
+    "weight_decay": 0.001,
+    "optimizer": "adam",
+    "scheduler": true,
+    "max_epochs": 1000,
+    "warmup_epochs": 20,
+    "beta_1": 0.5,
+    "warmup_epochs_loso": 3,
+    "byot_proj_dim": 128,
+    "distill_temperature": 3.0,
+    "primary_output": "ensemble",
+    "ensemble_loss_weight": 1.2,
+    "teacher_loss_weight": 0.8,
+    "teacher_ensemble_weight": 3.0,
+    "ensemble_prior_shallow": 0.45,
+    "ensemble_prior_mid": 0.9,
+    "ensemble_prior_deep": 1.15,
+    "byot_distill_start_epoch": 30,
+    "byot_distill_ramp_epochs": 20,
+    "byot_hint_start_epoch": 60,
+    "byot_hint_ramp_epochs": 20,
+    "byot_normalize_hints": true,
+    "byot_ce_weight_shallow": 0.8,
+    "byot_ce_weight_mid": 0.9,
+    "byot_ce_weight_deep": 1.0,
+    "byot_kd_weight_shallow": 0.5,
+    "byot_kd_weight_mid": 0.6,
+    "byot_kd_weight_deep": 0.7,
+    "byot_hint_weight_shallow": 0.15,
+    "byot_hint_weight_mid": 0.15,
+    "byot_hint_weight_deep": 0.1,
+    "n_channels": 22,
+    "F1": 32,
+    "temp_kernel_lengths": [
+      20,
+      32,
+      64
+    ],
+    "pool_length_1": 8,
+    "pool_length_2": 7,
+    "D": 2,
+    "dropout_conv": 0.4,
+    "d_group": 16,
+    "tcn_depth": 2,
+    "kernel_length_tcn": 4,
+    "dropout_tcn": 0.3,
+    "use_group_attn": true,
+    "q_heads": 4,
+    "kv_heads": 2,
+    "trans_depth": 5,
+    "trans_dropout": 0.4
+  },
+  "data": {
+    "preprocessing": {
+      "batch_size": 16,
+      "high_cut": null,
+      "interaug": true,
+      "low_cut": null,
+      "sfreq": 250,
+      "start": 0.0,
+      "stop": 0.0,
+      "z_scale": true,
+      "num_workers": 0
+    },
+    "cache_signature": "53d3f29ac128fee21c9d0cc1cebd68537ca5dd92f7cdcd5e60c7c49d1b155b37",
+    "train_n": 288,
+    "test_n": 288,
+    "test_shape": [
+      288,
+      22,
+      1000
+    ],
+    "class_names": [
+      "feet",
+      "hand(L)",
+      "hand(R)",
+      "tongue"
+    ],
+    "raw_files": {
+      "A01T.mat": {
+        "path": "C:\\Users\\zyx19\\Desktop\\zhengliu\\\u84b8\u998f\\TCFormer\\C-\\Users\\zyx19\\Desktop\\zhengliu\\\u84b8\u998f\\TCFormer\\data_cache\\mne_data\\MNE-bnci-data\\~bci\\database\\001-2014\\A01T.mat",
+        "sha256": "054f02e70cf9c4ada1517e9b9864f45407939c1062c6793516585c6f511d0325"
+      },
+      "A01E.mat": {
+        "path": "C:\\Users\\zyx19\\Desktop\\zhengliu\\\u84b8\u998f\\TCFormer\\C-\\Users\\zyx19\\Desktop\\zhengliu\\\u84b8\u998f\\TCFormer\\data_cache\\mne_data\\MNE-bnci-data\\~bci\\database\\001-2014\\A01E.mat",
+        "sha256": "53d415f39c3d7b0c88b894d7b08d99bcdfe855ede63831d3691af1a45607fb62"
+      }
+    },
+    "normalization": "Project BaseDataModule._z_scale, fitted on training data",
+    "test_augmentation": false,
+    "session_counts_all": {
+      "session_E": 288,
+      "session_T": 288
+    }
+  },
+  "weights": {
+    "shallow": 0.09040120989084244,
+    "mid": 0.31461989879608154,
+    "deep": 0.3596881628036499,
+    "final": 0.2352907359600067
+  },
+  "n_parameters": 254594,
+  "preprocessing_seconds": 0.1357254999999995,
+  "inference_seconds_including_transfer_and_initialization": 1.9688695000000003,
+  "timing_note": "Whole test pass, not a steady-state latency benchmark",
+  "archived_accuracy_pct": 93.06,
+  "accuracy_minus_archived_pp": -0.004444444444445139,
+  "metrics": [
+    {
+      "dataset": "bcic2a",
+      "seed": 0,
+      "subject": 1,
+      "exit": "shallow",
+      "n_trials": 288,
+      "accuracy_pct": 88.88888888888889,
+      "kappa": 0.8518518518518519,
+      "ece_15": 0.051658677952725066,
+      "nll": 0.3549497381001684,
+      "brier_sum": 0.19170575717734337,
+      "mean_confidence": 0.8399787152398167
+    },
+    {
+      "dataset": "bcic2a",
+      "seed": 0,
+      "subject": 1,
+      "exit": "mid",
+      "n_trials": 288,
+      "accuracy_pct": 92.70833333333334,
+      "kappa": 0.9027777777777778,
+      "ece_15": 0.0378844103751999,
+      "nll": 0.29647328062289996,
+      "brier_sum": 0.13368248037397734,
+      "mean_confidence": 0.937344896848955
+    },
+    {
+      "dataset": "bcic2a",
+      "seed": 0,
+      "subject": 1,
+      "exit": "deep",
+      "n_trials": 288,
+      "accuracy_pct": 92.01388888888889,
+      "kappa": 0.8935185185185185,
+      "ece_15": 0.03105203959022068,
+      "nll": 0.29587727941361125,
+      "brier_sum": 0.1359812079026147,
+      "mean_confidence": 0.9385521550420093
+    },
+    {
+      "dataset": "bcic2a",
+      "seed": 0,
+      "subject": 1,
+      "exit": "final",
+      "n_trials": 288,
+      "accuracy_pct": 91.31944444444444,
+      "kappa": 0.8842592592592593,
+      "ece_15": 0.03810405633343725,
+      "nll": 0.27953673997694367,
+      "brier_sum": 0.13347926685433759,
+      "mean_confidence": 0.9503276866689335
+    },
+    {
+      "dataset": "bcic2a",
+      "seed": 0,
+      "subject": 1,
+      "exit": "ensemble",
+      "n_trials": 288,
+      "accuracy_pct": 93.05555555555556,
+      "kappa": 0.9074074074074074,
+      "ece_15": 0.04052227686859832,
+      "nll": 0.27708668847010026,
+      "brier_sum": 0.1279832837462066,
+      "mean_confidence": 0.9374408840620205
+    }
+  ],
+  "confusion_matrices": {
+    "shallow": [
+      [
+        59,
+        1,
+        3,
+        9
+      ],
+      [
+        0,
+        69,
+        3,
+        0
+      ],
+      [
+        0,
+        4,
+        67,
+        1
+      ],
+      [
+        10,
+        1,
+        0,
+        61
+      ]
+    ],
+    "mid": [
+      [
+        65,
+        2,
+        1,
+        4
+      ],
+      [
+        0,
+        70,
+        2,
+        0
+      ],
+      [
+        0,
+        3,
+        68,
+        1
+      ],
+      [
+        8,
+        0,
+        0,
+        64
+      ]
+    ],
+    "deep": [
+      [
+        65,
+        1,
+        1,
+        5
+      ],
+      [
+        0,
+        70,
+        2,
+        0
+      ],
+      [
+        0,
+        4,
+        67,
+        1
+      ],
+      [
+        9,
+        0,
+        0,
+        63
+      ]
+    ],
+    "final": [
+      [
+        63,
+        1,
+        1,
+        7
+      ],
+      [
+        0,
+        67,
+        5,
+        0
+      ],
+      [
+        0,
+        4,
+        68,
+        0
+      ],
+      [
+        7,
+        0,
+        0,
+        65
+      ]
+    ],
+    "ensemble": [
+      [
+        65,
+        1,
+        1,
+        5
+      ],
+      [
+        0,
+        70,
+        2,
+        0
+      ],
+      [
+        0,
+        3,
+        68,
+        1
+      ],
+      [
+        7,
+        0,
+        0,
+        65
+      ]
+    ]
+  },
+  "fusion_vs_final": {
+    "reference": "Final exit in the same multi-exit model; NOT independent single-exit baseline",
+    "fusion_minus_final_pp": 1.736111111111116,
+    "rescued_final_errors": 6,
+    "introduced_errors": 1,
+    "prediction_disagreement_pct": 2.7777777777777777
+  }
+}
