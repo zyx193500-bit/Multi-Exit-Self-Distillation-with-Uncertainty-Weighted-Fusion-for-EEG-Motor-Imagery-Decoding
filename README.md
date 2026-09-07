@@ -1,0 +1,1 @@
+# Multi-Exit-Self-Distillation-with-Uncertainty-Weighted-Fusion-for-EEG-Motor-Imagery-Decoding
