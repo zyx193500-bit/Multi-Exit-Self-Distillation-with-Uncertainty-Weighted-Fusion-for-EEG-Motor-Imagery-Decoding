@@ -20,3 +20,4 @@ reach 87.04% on IV-2a and 89.99% on IV-2b, compared with 84.80% and 87.63% for t
 single-exit baselines, giving improvements of 2.24 and 2.36 percentage points, respectively.
 Ablation experiments further characterize the roles of multi-level exits, inter-exit distillation,
 and uncertainty-weighted fusion and show that their effects are configuration dependent.
+<img width="1418" height="827" alt="Main figure" src="https://github.com/user-attachments/assets/e4b92f99-571e-448a-848a-2b5540d8f65c" />
